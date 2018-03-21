@@ -1,1 +1,10 @@
+title: HPC Sevilla Awards Innovation
+description: CI/CD integrated with docker and pipeline for all Liferay Teams
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-architect
+markdown: kramdown
+nav:
+    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: Projects2, description: My Projects2, url: 'http://project.onevcat.com'}
+
