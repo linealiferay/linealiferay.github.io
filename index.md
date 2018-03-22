@@ -108,6 +108,14 @@ La información de entrada será los parámetros de despliegue de los artefactos
 |:-------------|:------------------|
 | Arquitecto           | 360 horas | 
 
+El proceso de implementación se dividió en diferentes etapas:
+
+* Investigación y pruebas de concepto
+* Implementación de jobs a medida para proyectos Liferay
+* Ajustes y mejoras de tiempos de respuesta
+* Inclusión de procesos de QA
+* Estandarización y paquetización para uso global en proyectos Liferay
+
 
 
 
