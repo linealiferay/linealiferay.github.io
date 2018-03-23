@@ -51,6 +51,7 @@ Partimos de una imágen de jenkins con la última versión de dockerhub a la que
 
 #### [](#header-4)Esclavos-centos
 Partimos de una imágen de centos muy liviana en la que instalamos las herramientas comunes de compilación de los proyectos de Liferay entre las que se encuentran:
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/cicd.png)
 
 *   **git**
 *   **gradle**
