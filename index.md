@@ -19,7 +19,7 @@ Tras la propuesta de uno de los clientes con los que trabajamos desde la línea 
 *   Reducción del time-to-market en la integración continua.
 *   Reutilización de activos para nuevos proyectos
 
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/jenkins-docker-01.png)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/jenkins-docker-01.png)
 
 
 # [](#header-1)2. Descripción del software reutilizable o herramienta de soporte al desarrollo: 
@@ -35,7 +35,7 @@ Partimos de una imágen de jenkins con la última versión de dockerhub a la que
 
 ##### Las tareas/jobs utilizadas en todos los proyectos liferay son lo siguientes:
 
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/jenkins-jobs.png)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/jenkins-jobs.png)
 
 *   **Task_Update_Repository:** Actualizará el código del repositorio.
 *   **Task_QA:** Ejecución de análisis estático de código.
@@ -59,7 +59,7 @@ Partimos de una imágen de centos muy liviana en la que instalamos las herramien
 
 ### [](#header-3)Pipeline: Parallels Jobs 
 
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/jenkins-jobs-parallels.png)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/jenkins-jobs-parallels.png)
 
 La configuración de workflows se puede realizar de una forma decalarativa en lugar de con las tareas de tipo flow, para ello podemos hacer uso de tareas de tipo pipeline. 
 Ventajas que nos aportan los pipelines respecto a los flows:
@@ -71,7 +71,7 @@ Ventajas que nos aportan los pipelines respecto a los flows:
 ### [](#header-3)Despliegues
 El proceso de despliegue ha quedado totalmente parametrizable y automatizado, mediante la creación de tags en git se iniciará el proceso de despliegue de los artefactos nexus para posteriormente poder ejecutar la tarea de despliegue, dicha tarea en nuestros proyectos la hemos delegado en un perfil de release-manager para que sea el que controle que versiones desplegar en los entornos.
 
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/nexus.png)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/nexus.png)
 
 ##### [](#header-5)Proceso de despliegue
 
@@ -79,7 +79,7 @@ El proceso de despliegue ha quedado totalmente parametrizable y automatizado, me
 2.  Copia desde el esclavo al host de destino.
 3.  Despliega a la carpeta deploy los artefactos.
 
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/deployment.png)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/deployment.png)
 
 ## [](#header-2)b.  Software libre utilizado. 
 *   **git**
@@ -98,7 +98,7 @@ Los pasos necesarios para adaptar la maqueta de integración continua serían lo
 
 ## [](#header-2)d.  Información de entrada y de salida esperada en su utilización. 
 La información de entrada será los parámetros de despliegue de los artefactos y la salida será el despliegue en los entornos finales.
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/deployment.png)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/deployment.png)
 
 # [](#header-1)3. Inversión realizada. Detalle del esfuerzo en horas desglosado por persona. 
 
@@ -131,7 +131,7 @@ Actualmente estamos trabajando de manera conjunta con Madrid, Barcelona y Londre
 El uso de ésta paquetización a otros proyectos del centro es totalmente viable ya que solo sería necesario que cada proyecto instalase en su esclavo sus herramientas de compilación. Todos los demás pasos que se utilizan son comunes a la gran mayoría de proyectos del mercado.
 
 
-![](https://raw.githubusercontent.com/dmcisneros/dmcisneros.github.io/master/assets/images/ci/team.jpg)
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/team.jpg)
 
 
 
