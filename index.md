@@ -51,7 +51,6 @@ Partimos de una imágen de jenkins con la última versión de dockerhub a la que
 
 #### [](#header-4)Esclavos-centos
 Partimos de una imágen de centos muy liviana en la que instalamos las herramientas comunes de compilación de los proyectos de Liferay entre las que se encuentran:
-![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/cicd.png)
 
 *   **git**
 *   **gradle**
@@ -83,11 +82,14 @@ El proceso de despliegue ha quedado totalmente parametrizable y automatizado, me
 ![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/deployment.png)
 
 ## [](#header-2)b.  Software libre utilizado. 
+
 *   **git**
 *   **gradle**
 *   **docker**
 *   **jdk8**
 *   **nexus**
+
+![](https://raw.githubusercontent.com/linealiferay/linealiferay.github.io/master/assets/images/ci/cicd.png)
 
 ## [](#header-2)c.  Resumen de pasos para su instalación y prueba. 
 Los pasos necesarios para adaptar la maqueta de integración continua serían los siguientes: 
